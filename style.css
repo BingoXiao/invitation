@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("./assets/back@2x.png");
+    background-position: left top;
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.inv-img {
+    margin-top: 0.29rem;
+    margin-bottom: 0.19rem;
+    text-align: center;
+}
+
+.inv-img img {
+    width: 1.61rem;
+    height: 1.61rem;
+    border-radius: 100%;
+}
+
+.inv-title {
+    margin-bottom: 0.29rem;
+    font-size: 0.63rem;
+    line-height: 0.63rem;
+    color: rgb(14, 177, 195);
+    text-align: center;
+}
+
+.inv-form-group {
+    margin-bottom: 0.09rem;
+}
+
+.inv-form-group .form-control:focus {
+    border-color: #0eb1c3;
+    box-shadow: none;
+}
+
+.inv-input {
+    margin: auto;
+    width: 6rem;
+    height: 0.8rem;
+}
+
+.inv-input input, .inv-input select {
+    height: 100%;
+    border-color: #9adee0;
+    font-size: 0.35rem;
+    line-height: 0.35rem;
+}
+
+.inv-btn {
+    margin-top: 0.35rem;
+    width: 6rem;
+    height: 0.8rem;
+    color: rgb(255, 254, 254);
+    font-size: 0.46rem;
+    line-height: 0.46rem;
+    background-color: #0eb1c3;
+    border: none;
+}
+
+.inv-btn.active,
+.inv-btn.focus,
+.inv-btn:active,
+.inv-btn:focus,
+.inv-btn:hover,
+.inv-btn.active.focus,
+.inv-btn.active:focus,
+.inv-btn:active:focus,
+.inv-btn:active.focus,
+.inv-btn.disabled.focus,
+.inv-btn.disabled:focus,
+.inv-btn.disabled:hover,
+.inv-btn[disabled].focus,
+.inv-btn[disabled]:focus,
+.inv-btn[disabled]:hover {
+    color: rgb(255, 254, 254);
+    background-color: #0eb1c3;
+    border: none;
+}
+
+.inv-get{
+    position: absolute;
+    bottom: 1.5rem;
+    left: 0;
+    right: 0;
+}
+
+.inv-success-icon {
+    margin-top: 2.53rem;
+}
+
+.inv-success-tips {
+    font-size: 0.63rem;
+    color: rgb(14, 177, 195);
+    text-align: center;
+}
+
+.inv-chart-img{
+    width: 6.6rem;
+    margin: auto;
+    text-align: center;
+}
+.inv-chart-img img{
+    width: 100%;
+}
+

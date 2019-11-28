@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>继教项目签到</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]-->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>-->
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <script type="text/javascript">
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    if (clientWidth >= 750) {
+                        docEl.style.fontSize = '100px';
+                    } else {
+                        docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+                    }
+                };
+
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+    </script>
+</head>
+
+<body>
+<div class="container-fluid">
+    <div class="inv-box">
+        <div class="inv-img">
+            <img src="./assets/logo@2x.png" alt="logo">
+        </div>
+        <div class="inv-title">继教项目签到信息</div>
+        <div class="center-block inv-form">
+            <form id="sign_in_form" class="form-horizontal">
+                <div class="form-group inv-form-group">
+                    <label for="Name" class="control-label sr-only">姓名</label>
+                    <div class="inv-input">
+                        <input type="text" class="form-control" id="Name" name="Name" placeholder="姓名">
+                    </div>
+                </div>
+                <div class="form-group inv-form-group">
+                    <label for="Gender" class="control-label sr-only">性别</label>
+                    <div class="inv-input">
+                        <select id="Gender" class="form-control" name="Gender">
+                            <option selected>男</option>
+                            <option>女</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group inv-form-group">
+                    <label for="Job" class="control-label sr-only">职称</label>
+                    <div class="inv-input">
+                        <input type="text" class="form-control" id="Job" name="Job" placeholder="职称">
+                    </div>
+                </div>
+                <div class="form-group inv-form-group">
+                    <label for="Jjcode" class="control-label sr-only">继教编号</label>
+                    <div class="inv-input">
+                        <input id="Jjcode" type="text" class="form-control" id="Jjcode" name="Jjcode" placeholder="继教编号">
+                    </div>
+                </div>
+                <div class="form-group inv-form-group">
+                    <label for="Company" class="control-label sr-only">单位</label>
+                    <div class="inv-input">
+                        <input type="text" class="form-control" id="Company" name="Company" placeholder="单位">
+                    </div>
+                </div>
+                <div class="form-group inv-form-group">
+                    <label for="Phone" class="control-label sr-only">联系电话</label>
+                    <div class="inv-input">
+                        <input type="number" class="form-control" id="Phone" name="Phone" placeholder="联系电话">
+                    </div>
+                </div>
+                <div class="form-group inv-form-group">
+                    <label for="Cardid" class="control-label sr-only">身份证件</label>
+                    <div class="inv-input">
+                        <input type="text" class="form-control" id="Cardid" name="Cardid" placeholder="身份证件">
+                    </div>
+                </div>
+                <div class="form-group inv-form-group">
+                    <label for="Department" class="control-label sr-only">所在科室</label>
+                    <div class="inv-input">
+                        <input type="text" class="form-control" id="Department" name="Department" placeholder="所在科室">
+                    </div>
+                </div>
+                <div class="inv-form-group">
+                    <button id="SignIn" type="button"
+                            class="btn btn-default center-block inv-btn">
+                        签&emsp;到
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+<script type="text/javascript" src="./jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="bootstrap.min.js"></script>
+<script type="text/javascript" src="./main.js"></script>
+</body>
+</html>
