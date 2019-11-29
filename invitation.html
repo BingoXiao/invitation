@@ -39,13 +39,21 @@
 
 <body>
 <div class="container-fluid">
+    <!--<div id="error"></div>-->
     <div class="inv-box">
         <div class="inv-img">
             <img src="./assets/logo@2x.png" alt="logo">
         </div>
         <div class="inv-title">继教项目签到信息</div>
         <div class="center-block inv-form">
-            <form id="sign_in_form" class="form-horizontal">
+            <!--<form id="sign_in_form"
+                  class="form-horizontal"
+                  action="https://active.0717aier.com/v1/activetmp/sign"
+                  enctype="application/x-www-form-urlencoded"
+                  method="post"
+                  target="iframeContent">-->
+            <form id="sign_in_form"
+                  class="form-horizontal">
                 <div class="form-group inv-form-group">
                     <label for="Name" class="control-label sr-only">姓名</label>
                     <div class="inv-input">
@@ -70,7 +78,8 @@
                 <div class="form-group inv-form-group">
                     <label for="Jjcode" class="control-label sr-only">继教编号</label>
                     <div class="inv-input">
-                        <input id="Jjcode" type="text" class="form-control" id="Jjcode" name="Jjcode" placeholder="继教编号">
+                        <input id="Jjcode" type="text" class="form-control" id="Jjcode" name="Jjcode"
+                               placeholder="继教编号">
                     </div>
                 </div>
                 <div class="form-group inv-form-group">
@@ -97,13 +106,13 @@
                         <input type="text" class="form-control" id="Department" name="Department" placeholder="所在科室">
                     </div>
                 </div>
-                <div class="inv-form-group">
-                    <button id="SignIn" type="button"
-                            class="btn btn-default center-block inv-btn">
-                        签&emsp;到
-                    </button>
-                </div>
             </form>
+            <div class="inv-form-group">
+                <button id="SignIn" type="button"
+                   class="btn btn-default center-block inv-btn">
+                    签&emsp;到
+                </button>
+            </div>
         </div>
     </div>
 </div>
